@@ -19,7 +19,7 @@ done
 unset _xdg_dir
 
 if [[ -z "$XDG_RUNTIME_DIR" ]]; then
-  export XDG_RUNTIME_DIR="/tmp/xdg-runtime-$UID"
+  export XDG_RUNTIME_DIR="$PREFIX/tmp/xdg-runtime-$UID"
 fi
 if [[ ! -d "$XDG_RUNTIME_DIR" ]]; then
   zf_mkdir -m 700 -p "$XDG_RUNTIME_DIR"
